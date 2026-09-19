@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for the Banana Walk iOS app.">
+<title>Banana Walk Privacy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap">
+<style>
+	:root {
+		--bg: #EBF7ED;
+		--surface: #F5FAF6;
+		--line: #CEE1D1;
+		--text: #193B22;
+		--muted: #547158;
+		--yellow: #FCCF28;
+		--butter: #FDEFBA;
+		--mint: #256B42;
+	}
+	@media (prefers-color-scheme: dark) {
+		:root:not([data-theme="light"]) {
+			--bg: #12241A;
+			--surface: #182D21;
+			--line: #2C4A36;
+			--text: #E6F2E9;
+			--muted: #9DB8A4;
+			--yellow: #FCCF28;
+			--butter: #4A3E12;
+			--mint: #8FD3AB;
+		}
+	}
+	:root[data-theme="dark"] {
+		--bg: #12241A;
+		--surface: #182D21;
+		--line: #2C4A36;
+		--text: #E6F2E9;
+		--muted: #9DB8A4;
+		--yellow: #FCCF28;
+		--butter: #4A3E12;
+		--mint: #8FD3AB;
+	}
+	body {
+		background: var(--bg);
+		color: var(--text);
+		font-family: "Outfit", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 1.55;
+		padding-inline: 20px;
+		padding-block: 40px 64px;
+	}
+	main { max-width: 640px; margin: 0 auto; }
+	header {
+		display: flex; flex-direction: column; gap: 10px;
+		padding-bottom: 28px; margin-bottom: 32px;
+		border-bottom: 1px solid var(--line);
+	}
+	.eyebrow {
+		display: inline-flex; align-items: center; gap: 8px;
+		font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+		color: var(--muted);
+	}
+	.eyebrow::before {
+		content: ""; width: 12px; height: 12px; border-radius: 50%;
+		background: var(--yellow); border: 2px solid var(--mint); box-sizing: border-box;
+	}
+	h1 { font-size: 34px; font-weight: 600; line-height: 1.15; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+	.lede { color: var(--muted); margin: 0; font-size: 18px; font-weight: 300; }
+	.date { font-size: 14px; color: var(--muted); }
+	h2 { font-size: 21px; font-weight: 600; margin: 36px 0 10px; letter-spacing: -0.005em; }
+	p { margin: 0 0 12px; }
+	ul { margin: 0 0 12px; padding-left: 22px; }
+	li { margin-bottom: 6px; }
+	li::marker { color: var(--mint); }
+	.summary {
+		background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+		padding: 18px 20px; margin: 0 0 8px;
+		display: grid; gap: 10px;
+	}
+	.summary div { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; }
+	.summary span:first-child {
+		width: 22px; height: 22px; border-radius: 50%;
+		background: var(--butter); color: var(--text);
+		display: inline-flex; align-items: center; justify-content: center;
+		font-size: 13px; font-weight: 600;
+	}
+	.summary strong { font-weight: 500; }
+	table { border-collapse: collapse; width: 100%; font-size: 15.5px; margin: 6px 0 14px; }
+	th, td { text-align: left; padding: 9px 10px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+	th { font-weight: 500; color: var(--muted); font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; }
+	td:first-child { font-weight: 500; width: 34%; }
+	.wrap { overflow-x: auto; }
+	a { color: var(--mint); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+	a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; border-radius: 4px; }
+	footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+	@media (max-width: 420px) {
+		h1 { font-size: 29px; }
+		td:first-child { width: 40%; }
+	}
+</style>
+<style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<main>
+	<header>
+		<span class="eyebrow">Banana Walk</span>
+		<h1>Privacy policy</h1>
+		<p class="lede">Banana Walk turns your steps into coins and collectible bananas. This page says what the app keeps, where it goes, and how to get rid of it.</p>
+		<span class="date">Effective 19 September 2026</span>
+	</header>
+
+	<section class="summary" aria-label="In short">
+		<div><span>1</span><span><strong>Your steps stay on your phone</strong> unless you sign in. The app reads them from the phone's motion sensor and never sends them anywhere on its own.</span></div>
+		<div><span>2</span><span><strong>Signing in is optional.</strong> It exists so your progress can follow you to a new phone. Sign in and a copy of your game save is stored under your account.</span></div>
+		<div><span>3</span><span><strong>No ads, no analytics, no tracking.</strong> Nothing in the app profiles you or sells anything about you.</span></div>
+		<div><span>4</span><span><strong>Delete Account in the app</strong> removes your account and the cloud copy of your save at once.</span></div>
+	</section>
+
+	<h2>What the app collects</h2>
+	<p>Without an account, everything below lives only on your phone, in the app's own storage, and leaves with the app when you delete it.</p>
+	<div class="wrap">
+	<table>
+		<tr><th>Data</th><th>Where it comes from</th><th>Why</th></tr>
+		<tr><td>Step counts and walking distance</td><td>Your phone's motion sensor, through Apple's CoreMotion, after you allow Motion &amp; Fitness access</td><td>To count today's steps, credit coins, and keep your daily step history and personal records</td></tr>
+		<tr><td>Game progress</td><td>Created by playing</td><td>Coins, pulls, your banana collection, streaks, quests, achievements, mileage and records</td></tr>
+		<tr><td>Settings</td><td>Chosen by you</td><td>Daily goal, text size, sound, haptics, reminder time</td></tr>
+		<tr><td>Banana Club status</td><td>The App Store, when you subscribe</td><td>To unlock membership features. Apple handles payment; the app never sees your card or billing details</td></tr>
+	</table>
+	</div>
+	<p>The app does not read your location, contacts, photos, camera, microphone or health records. It asks for Motion &amp; Fitness access the first time it needs steps, and for notification permission only if you turn the daily reminder on. Reminders are scheduled on the phone itself and are not sent from a server.</p>
+
+	<h2>If you sign in</h2>
+	<p>You can sign in with Apple, Google or a phone number from the You tab. Sign-in is handled by Firebase Authentication, a Google service. When you do, the app receives and stores:</p>
+	<ul>
+		<li>A user id created for you by Firebase.</li>
+		<li>The name and email address the provider shares. With Sign in with Apple you can hide your email, and the app works fine with the relay address Apple gives it.</li>
+		<li>Your phone number, if you sign in with one. Firebase sends the verification code by SMS.</li>
+	</ul>
+	<p>A copy of your game save, the progress and settings listed above, is then stored in Cloud Firestore under your account, together with your total step count. It is uploaded when it changes and when the app goes to the background. When you sign in on another phone, the app offers to restore that copy. Cloud data is only readable by the signed-in account that owns it.</p>
+	<p>Firebase Authentication and Cloud Firestore are operated by Google LLC. Their handling of that data is described in Google's <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and Security in Firebase</a>. The app has Firebase Analytics and advertising features switched off.</p>
+
+	<h2>The home-screen widget</h2>
+	<p>The widget shows your equipped banana, today's steps and the coins toward your next pull. It reads a small snapshot the app writes into a storage area shared only between the app and the widget on your phone. Nothing about the widget leaves the device.</p>
+
+	<h2>What the app never does</h2>
+	<ul>
+		<li>Show ads or use advertising identifiers.</li>
+		<li>Run analytics, crash reporting or any tracking SDK.</li>
+		<li>Sell, rent or share your data with anyone other than the providers named above, and only as far as sign-in and cloud backup need them.</li>
+		<li>Collect data from children on purpose. Banana Walk is not directed at children under 13, and no account is needed to play.</li>
+	</ul>
+
+	<h2>Deleting your data</h2>
+	<ul>
+		<li><strong>On this phone:</strong> delete the app. All local progress goes with it.</li>
+		<li><strong>In the cloud:</strong> open the You tab, then Account, then Delete Account. This removes your Firebase account and the stored copy of your save immediately. Sign Out alone keeps the cloud copy so you can come back to it.</li>
+		<li><strong>Motion access:</strong> can be withdrawn at any time in iOS Settings, Privacy &amp; Security, Motion &amp; Fitness. The app then stops counting steps.</li>
+	</ul>
+
+	<h2>Changes</h2>
+	<p>If the app starts handling data differently, this page will be updated and the date at the top will change. Changes that matter will also be mentioned in the app's release notes.</p>
+
+	<h2>Contact</h2>
+	<p>Questions about privacy in Banana Walk go to the developer at <a href="mailto:dnguyen992@gmail.com">dnguyen992@gmail.com</a>.</p>
+
+	<footer>Banana Walk is an independent app by Dominic Nguyen. This page is the privacy policy linked from the App Store and TestFlight.</footer>
+</main>
+
+</body>
+</html>
