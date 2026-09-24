@@ -110,7 +110,7 @@
 	</header>
 
 	<section class="summary" aria-label="In short">
-		<div><span>1</span><span><strong>Your steps stay on your phone</strong> unless you sign in. The app reads them from the phone's motion sensor and never sends them anywhere on its own.</span></div>
+		<div><span>1</span><span><strong>Your steps stay on your phone</strong> unless you sign in. The app reads them from the phone's motion sensor and from Apple Health, and never sends them anywhere on its own.</span></div>
 		<div><span>2</span><span><strong>Signing in is optional.</strong> It exists so your progress can follow you to a new phone. Sign in and a copy of your game save is stored under your account.</span></div>
 		<div><span>3</span><span><strong>No ads, no analytics, no tracking.</strong> Nothing in the app profiles you or sells anything about you.</span></div>
 		<div><span>4</span><span><strong>Delete Account in the app</strong> removes your account and the cloud copy of your save at once.</span></div>
@@ -122,12 +122,13 @@
 	<table>
 		<tr><th>Data</th><th>Where it comes from</th><th>Why</th></tr>
 		<tr><td>Step counts and walking distance</td><td>Your phone's motion sensor, through Apple's CoreMotion, after you allow Motion &amp; Fitness access</td><td>To count today's steps, credit coins, and keep your daily step history and personal records</td></tr>
+		<tr><td>Daily step totals</td><td>Apple Health, read only, after you allow Health access. This is how steps counted by an Apple Watch reach the app. The app writes nothing to Health.</td><td>To make each day's total match Health when the phone was not carried</td></tr>
 		<tr><td>Game progress</td><td>Created by playing</td><td>Coins, pulls, your banana collection, streaks, quests, achievements, mileage and records</td></tr>
 		<tr><td>Settings</td><td>Chosen by you</td><td>Daily goal, text size, sound, haptics, reminder time</td></tr>
 		<tr><td>Banana Club status</td><td>The App Store, when you subscribe</td><td>To unlock membership features. Apple handles payment; the app never sees your card or billing details</td></tr>
 	</table>
 	</div>
-	<p>The app does not read your location, contacts, photos, camera, microphone or health records. It asks for Motion &amp; Fitness access the first time it needs steps, and for notification permission only if you turn the daily reminder on. Reminders are scheduled on the phone itself and are not sent from a server.</p>
+	<p>The app does not read your location, contacts, photos, camera or microphone. From Health it reads step count only, and only when you allow it; no other Health data is read, and nothing is written. It asks for Motion &amp; Fitness and Health access the first time it needs steps, and for notification permission only if you turn the daily reminder on. Reminders are scheduled on the phone itself and are not sent from a server.</p>
 
 	<h2>If you sign in</h2>
 	<p>You can sign in with Apple, Google or a phone number from the You tab. Sign-in is handled by Firebase Authentication, a Google service. When you do, the app receives and stores:</p>
@@ -155,6 +156,7 @@
 		<li><strong>On this phone:</strong> delete the app. All local progress goes with it.</li>
 		<li><strong>In the cloud:</strong> open the You tab, then Account, then Delete Account. This removes your Firebase account and the stored copy of your save immediately. Sign Out alone keeps the cloud copy so you can come back to it.</li>
 		<li><strong>Motion access:</strong> can be withdrawn at any time in iOS Settings, Privacy &amp; Security, Motion &amp; Fitness. The app then stops counting steps.</li>
+		<li><strong>Health access:</strong> can be withdrawn at any time in the Health app under Sharing, Apps. The app then counts only what the phone's own sensor sees.</li>
 	</ul>
 
 	<h2>Changes</h2>
